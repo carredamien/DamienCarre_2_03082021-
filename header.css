@@ -1,0 +1,143 @@
+/* Header */
+.container--grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 5rem;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "header__logo connect"
+    "nav nav";
+}
+
+.header__logo {
+  grid-area: header__logo;
+  display: inline-block;
+  width: 12rem;
+  height: auto;
+  margin: 1rem;
+  cursor: pointer;
+}
+
+.connect {
+  grid-area: connect;
+  justify-self: end;
+  font-size: 1.8rem;
+  margin: 1rem;
+  padding: 1rem 0;
+  line-height: 2rem;
+  transition: font-weight 1s ease-out;
+}
+
+.connect:hover {
+  font-weight: bold;
+}
+
+.nav {
+  grid-area: nav;
+  align-self: flex-end;
+}
+
+.nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.nav ul li {
+  display: flex;
+  justify-content: center;
+  padding: 1.5rem;
+  font-size: 1.8rem;
+  width: 100%;
+  cursor: pointer;
+  border-bottom: 3px solid #F2F2F2;
+  transition: border 0.8s ease-out;
+}
+
+.nav ul li a {
+  font-family: "Raleway";
+  font-weight: bold;
+}
+
+.nav ul li:hover {
+  color: #0065FC;
+  border-bottom: 3px solid #0065FC;
+  font-weight: bold;
+}
+
+/* desktop */
+
+@media screen and (min-width:990px) {
+  .container--grid {
+    display: grid;
+    grid-template-columns: 3fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+      "header__logo connect nav nav";
+  }
+
+  .header__logo {
+    margin: 2rem 1.5rem;
+  }
+
+  .connect {
+    margin: 2rem 1.5rem 0 3rem;
+    grid-column: 3/3;
+    justify-self: start;
+  }
+
+  .nav {
+    grid-column: 2/2;
+    padding-top: 2.2rem;
+    align-self: flex-start;
+  }
+
+  .nav ul li {
+    margin-left: 3rem;
+  }
+
+}
+
+@media screen and (min-width:1200px) {
+  .container--grid {
+    display: grid;
+    grid-template-columns: 25fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+      "header__logo connect nav nav";
+  }
+
+  .header__logo {
+    margin: 2rem 0 0 5rem;
+  }
+
+  .connect {
+    margin: 2rem 5rem 0 0;
+    grid-column: 3/3;
+    justify-self: start;
+  }
+
+  .nav {
+    grid-column: 2/2;
+    padding-top: 0.8rem;
+    align-self: flex-start;
+  }
+
+  .nav ul {
+    width: 50%;
+  }
+
+  .nav ul li {
+    border: none;
+    border-top: 3px solid transparent;
+    margin-left: 8rem;
+    padding-top: 4rem;
+  }
+
+  .nav ul li:hover {
+    border: none;
+    border-top: 3px solid #0065FC;
+  }
+}
