@@ -1,0 +1,116 @@
+/*filters*/
+.filters {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.filters h2 {
+  margin: 0 2rem 0 2rem;
+  align-self: center;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.button__container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.button--filters {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 4.5rem;
+  border: 3px solid #F2F2F2;
+  border-radius: 3rem;
+  margin: 1rem 1rem 1rem 2rem;
+  transition: border 0.8s ease-out;
+}
+
+.button--filters:hover {
+  border: 3px solid #0065FC;
+}
+
+.bg-button {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: -3px;
+  left: -4px;
+  background-color: #DEEBFF;
+  border-radius: 50%;
+  height: calc(4.5rem + 1px);
+  width: calc(4.5rem + 1px);
+  margin: 0;
+  padding: 1rem;
+}
+
+.bg-button i {
+  color: #0065FC;
+  font-size: 2rem;
+}
+
+.button--text {
+  font-size: 1.8rem;
+  font-weight: bold;
+  padding-left: 4.8rem;
+  padding-right: 1rem;
+  text-transform: capitalize;
+}
+
+.info {
+  display: flex;
+  align-items: flex-start;
+  margin: 0 0 0 2rem;
+}
+
+.button-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 3rem;
+  width: 3rem;
+  margin: 1.2rem 1rem 0 0;
+  border: 1.5px solid #DEEBFF;
+  color: #0065FC;
+  border-radius: 50%;
+  font-size: 1.4rem;
+}
+
+.info p {
+  font-size: 1.6rem;
+  margin: 2rem 0 0 0;
+}
+
+/* desktop */
+@media screen and (min-width:990px) {
+  .filters {
+    position: relative;
+    display: flex;
+  }
+
+  .filters h2 {
+    align-self: center;
+    margin-left: 3rem;
+  }
+
+  .info {
+    position: absolute;
+    top: 6rem;
+    margin-left: 3rem;
+  }
+
+}
+
+/* big-desktop */
+@media screen and (min-width:1200px) {
+  .filters h2 {
+    margin-left: 10rem;
+  }
+
+  .info {
+    margin-left: 10rem;
+  }
+}
