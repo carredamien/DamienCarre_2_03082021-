@@ -451,6 +451,11 @@
     margin-left: 0.5vw;
   }
 
+  /*cards accommodation*/
+  .cards--accommodation .card--img--mer{
+    top:-125%;
+  }
+
   /*Cards populary*/
   .cards--populary .container--card {
     flex-direction: column;
@@ -635,7 +640,13 @@
     background-color: #f2f2f2;
   }
   .cards--accommodation .card--img-port{
-    top:-125%;
+    top:-95%;
+  }
+  .cards--accommodation .card--img--mouettes{
+    top:-95%;
+  }
+  .cards--accommodation .card--img--mer{
+    top:-185%;
   }
 
   .cards--accommodation .cards {
