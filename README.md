@@ -1,6 +1,6 @@
 # DamienCarre_2_03082021-
 
-1ére intégration html/css responsive de la formation de développeur web d'Openclassrooms (Réservia) 
+1ére intégration html/css responsive de la formation de développeur web d'Openclassrooms (Réservia) .
 
 Ici l'intérêt est de gérer différents positionnement à l'aide de flexbox ou au choix de grid ainsi que de gérer le responsive en respectant parfaitement les maquettes.
 
